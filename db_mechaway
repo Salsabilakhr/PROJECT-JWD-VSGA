@@ -1,0 +1,14 @@
+CREATE TABLE tb_service (
+    service_id INT(11) NOT NULL AUTO_INCREMENT,
+    service_jenis VARCHAR(100) NOT NULL,
+    service_harga VARCHAR(100) NOT NULL,
+    gambar_service VARCHAR(255), -- Kolom untuk menyimpan nama file gambar service
+    PRIMARY KEY(service_id),
+    UNIQUE KEY(service_name)
+);
+CREATE TABLE tb_customer (
+      customer_id INT(11) NOT NULL AUTO_INCREMENT,
+      nama_customer VARCHAR(100) NOT NULL,
+      alamat_customer VARCHAR(100) NOT NULL,
+      PRIMARY KEY(customer_id)
+);
